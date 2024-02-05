@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="errors.js" defer></script>
+</head>
+<body>
+    <div class="leftContainer">
+        <div class="hero">
+            <img src="odin-lined.png" alt="The Odin Project's logo" class="hero-logo">
+            <h1 class="hero-title">ODIN</h1>
+        </div>
+        <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <div class="rightContainer">
+        <div class="hook">
+            <p class="hook-paragraph">This is not a real online service! You know you need something <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.</p>
+            <p class="hook-paragraph">You <em>know</em> you want to.</p>
+        </div>
+
+        <form id="contact" action="" class="contactForm">
+            <h1 class="formTitle">Let's do this!</h1>
+            <div class="formInput">
+                <div class="input">
+                    <label for="firstName">FIRST NAME</label>
+                    <input id="firstName" type="text" name="firstName" placeholder="John">
+                </div>
+                <div class="input">
+                    <label for="lastName">LAST NAME</label>
+                    <input id="lastName" type="text" name="lastName" placeholder="Doe">
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="email" name="email" placeholder="johndoe@email.com">
+                </div>
+                <div class="input">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input id="phoneNumber" type="tel" name="phoneNumber" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="012 345 6789">
+                </div>
+                <div class="input notifiable">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" type="password" name="password">
+                </div>
+                <div class="input">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input id="confirmPassword" type="password" name="confirmPassword">
+                </div>
+
+            </div>
+        </form>
+        <button id="submitButton" form="contact" type="submit">Create Account</button>
+        <p class="loginText">Already have an account? <a href="https://invidious.lunar.icu/" target="_blank">Log in</a></p>
+   
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/*General*/
+@font-face {
+    font-family: "Norse";
+    src: url('Norse-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    height: 35px;
+    width: 300px;
+    border: #E5E7EB 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: #0000ff 1px solid;
+    box-shadow: #00000055 2px 2px 2px;
+}
+
+label {
+    color: #313a47;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+button {
+    border: none;
+    background-color: #596D48;
+    width: 250px;
+    height: 50px;
+    border-radius: 7px;
+    box-shadow: #00000055 2px 2px 2px;
+
+    margin: 50px;
+
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+button:active {
+    background-color: #495a3b;
+}
+
+/*Containers*/
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.leftContainer {
+    width: 35%;
+    height: 100vh;
+    flex: auto;
+    background: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    min-width: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightContainer {
+    width: 65%;
+    height: 100vh;
+    flex: auto;
+    background: #f9fafb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Modules and components*/
+.hero {
+    background-color: #00000055;
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo {
+    height: 140px;
+}
+
+.hero-title {
+    font-family: 'Norse';
+    color: #ffffff;
+    font-size: 144px;
+}
+
+.credits {
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hook {
+    margin: 0 50px;
+}
+
+.hook-paragraph {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contactForm {
+    background-color: #ffffff;
+    box-shadow: #00000055 3px 3px 3px;
+    padding: 30px 50px;
+}
+
+.formTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input {
+    margin-right: 80px;
+    margin-top: 25px;
+}
+
+.loginText {
+    margin: 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #1f2937;
+
+    a {
+        text-decoration: none;
+        color: #596D48;
+    }
+}
+
+.error {
+    border: #ff0000 1px solid;
+}
+
+.active::after {
+    content: '* Passwords do not match';
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #ff0000;
+}
